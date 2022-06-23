@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <package format="2">
-  <name>publisher_camera</name>
+  <name>DahuaCamera_RosDriver</name>
   <version>0.0.0</version>
   <description>The publisher_camera package</description>
 
