@@ -4,13 +4,14 @@
 	<arg name="Exposuretime" default="20000.0"/>
 	<arg name="Framerate" default="22.0"/>
 	<arg name="Shoottime" default="0.0"/>
-	<arg name="AutoExposure" default="True"/>
-	<param name="SerialNumber" type="string" value="$(arg SerialNumber)"/>
-	<param name="Brightness" type="double" value="$(arg Brightness)"/>
-	<param name="Exposuretime" type="double" value="$(arg Exposuretime)"/>
-	<param name="Framerate" type="double" value="$(arg Framerate)"/>
-	<param name="Shoottime" type="double" value="$(arg Shoottime)"/>
-	<param name="AutoExposure" type="bool" value="$(arg AutoExposure)"/>
+	<arg name="AutoExposure" default="Off"/>
+	
 	<node pkg="publisher_camera" name="Camera7J_Node" type="demo.py" output="screen">
+		<param name="SerialNumber" type="string" value="$(arg SerialNumber)"/>
+		<param name="Brightness" type="double" value="$(arg Brightness)"/>
+		<param name="Exposuretime" type="double" value="$(arg Exposuretime)"/>
+		<param name="Framerate" type="double" value="$(arg Framerate)"/>
+		<param name="Shoottime" type="double" value="$(arg Shoottime)"/>
+		<param name="AutoExposure" type="string" value="$(arg AutoExposure)"/>
 	</node> 
 </launch>
