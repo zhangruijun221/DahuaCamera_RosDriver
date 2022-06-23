@@ -707,7 +707,7 @@ class iRAYPLE():
                 return -1
         else:
             # 设置曝光
-            nRet = self.setExposureTime(20000)
+            nRet = self.setExposureTime(self.Exposuretime)
             if ( nRet != 0 ):
                 print("set ExposureTime fail")
                 return -1
